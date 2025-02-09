@@ -14,6 +14,7 @@ app.use(express.json());
 app.use(cors(corsOptions));
 
 app.get("/wake-me-up", (req, res) => {
+  console.log("Morning sir, what do you need");
   res.status(200).res.send("Good morning");
 });
 
